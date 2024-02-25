@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="s-1">
+        <div class="_n_container" onclick="showBalance(1)">
+            <div class="_n_card">
+                <div class="card-inner">
+                    <div class="_n_front">
+                        <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                        <div class="_n_row">
+                            <img src="https://i.ibb.co/G9pDnYJ/chip.png" style="width: 60px">
+                            <img src="https://i.ibb.co/WHZ3nRJ/visa.png" style="width: 60px">
+                        </div>
+                        <div class="_n_row card-no">
+                            <p>5244</p>
+                            <p>2150</p>
+                            <p>8252</p>
+                            <p>6420</p>
+                        </div>
+                        <div class="_n_row card-holder">
+                            <p>CARD HPLDER</p>
+                            <p>VALID TILL</p>
+                        </div>
+                        <div class="_n_row _n_name">
+                            <p>NATIA SAGHLIANI</p>
+                            <p>10 / 25</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_n_container" onclick="showBalance(2)">
+            <div class="_n_card">
+                <div class="card-inner">
+                    <div class="_n_front _n_front1">
+                        <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                        <div class="_n_row">
+                            <img src="https://i.ibb.co/G9pDnYJ/chip.png" style="width: 60px">
+                            <img src="https://i.ibb.co/WHZ3nRJ/visa.png" style="width: 60px">
+                        </div>
+                        <div class="_n_row card-no">
+                            <p>5243</p>
+                            <p>2151</p>
+                            <p>8254</p>
+                            <p>6428</p>
+                        </div>
+                        <div class="_n_row card-holder">
+                            <p>CARD HPLDER</p>
+                            <p>VALID TILL</p>
+                        </div>
+                        <div class="_n_row _n_name">
+                            <p>TIKO ELASHVILI</p>
+                            <p>12 / 26</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="userInfo" class="container">
+        <!-- აქ დაიწერება არჩეული იუზერის სახელი და გვარი -->
+        <h3 id="fullName"></h3>
+        <!-- ამ ელემენტის ქვეშ დაემატება ანგარიშების ქარდები createBalanceElement ფუნქციის საშუალლებით -->
+        <ul id="accountList">
+
+            <!-- ეს არის შაბლონი, როგორ უნდ გამოიყურებოდეს ანგარიშის ქარდი -->
+            <!-- <li>
+                <div class="user-info">
+                    <p class="fw-bold" id="fullName"></p>
+                    <div class="d-flex flex-column align-items-start card col-4 p-2 bg-danger-subtle mb-5 mt-2">
+                        <p class="fw-bold">Account Number:</p>
+                        <p>GE000005667</p>
+                        <p class="fw-bold">Balance:</p>
+                        <p id="balance">5000</p>
+                        <div>
+                            <input type="number" class="border border-1 border-danger p-1" id="transactionAmount">
+                            <button class="btn btn-success" id="depositButton">Deposit</button>
+                            <button class="btn btn-danger" id="withdrawButton">Withdrawn</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </li>
+            <li>
+                <div class="user-info">
+                    <p class="fw-bold" id="fullName"></p>
+                    <div class="d-flex flex-column align-items-start card col-4 p-2 bg-danger-subtle mb-5 mt-2">
+                        <p class="fw-bold">Account Number:</p>
+                        <p>GE000005667</p>
+                        <p class="fw-bold" class="balance">Balance:</p>
+                        <p id="balance">5000</p>
+                        <div>
+                            <input type="number" class="border border-1 border-danger p-1" id="transactionAmount">
+                            <button class="btn btn-success" id="depositButton">Deposit</button>
+                            <button class="btn btn-danger" id="withdrawButton">Withdrawn</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </li> -->
+            
+        </ul>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
